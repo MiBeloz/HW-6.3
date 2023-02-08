@@ -1,9 +1,9 @@
-#include "Rhombus.h"
+Ôªø#include "Rhombus.h"
 
 
 Rhombus::Rhombus(const int lengthABCD, const int angleAC, const int angleBD) : Parallelogram(lengthABCD, lengthABCD, angleAC, angleBD) {}
 
-std::string Rhombus::getName() { return "–ÓÏ·"; }
+std::string Rhombus::getName() { return "–†–æ–º–±"; }
 
 bool Rhombus::getCorrect() {
 	if (getLengthA() == getLengthB() && getLengthB() == getLengthC() && getLengthC() == getLengthD() && getAngleA() == getAngleC() && getAngleB() == getAngleD() && Quadrilateral::getCorrect()) {

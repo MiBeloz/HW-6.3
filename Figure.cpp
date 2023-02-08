@@ -1,15 +1,15 @@
-#include "Figure.h"
+п»ї#include "Figure.h"
 
 
 Figure::Figure() : sides{} {}
 
-std::string Figure::getName() { return "Фигура"; }
+std::string Figure::getName() { return "Р¤РёРіСѓСЂР°"; }
 
 int Figure::getSides() { return sides; }
 
-std::string Figure::getAllLengths() { return "Стороны=0"; }
+std::string Figure::getAllLengths() { return "РЎС‚РѕСЂРѕРЅС‹=0"; }
 
-std::string Figure::getAllAngles() { return "Углы=0"; }
+std::string Figure::getAllAngles() { return "РЈРіР»С‹=0"; }
 
 bool Figure::getCorrect() {
 	if (sides == 0) {
@@ -23,10 +23,10 @@ bool Figure::getCorrect() {
 std::string Figure::getInfo() {
 	std::string correct;
 	if (getCorrect()) {
-		correct = "Правильная";
+		correct = "РџСЂР°РІРёР»СЊРЅР°СЏ";
 	}
 	else {
-		correct = "Неправильная";
+		correct = "РќРµРїСЂР°РІРёР»СЊРЅР°СЏ";
 	}
-	return getName() + ":\n" + correct + "\nКоличество сторон: " + std::to_string(sides);
+	return getName() + ":\n" + correct + "\nРљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " + std::to_string(sides);
 }

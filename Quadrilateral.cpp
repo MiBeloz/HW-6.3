@@ -1,4 +1,4 @@
-#include "Quadrilateral.h"
+п»ї#include "Quadrilateral.h"
 
 
 Quadrilateral::Quadrilateral(const int lengthA, const int lengthB, const int lengthC, const int lengthD, const int angleA, const int angleB, const int angleC, const int angleD) : Figure(4) {
@@ -12,7 +12,7 @@ Quadrilateral::Quadrilateral(const int lengthA, const int lengthB, const int len
 	D = angleD;
 }
 
-std::string Quadrilateral::getName() { return "Четырехугольник"; }
+std::string Quadrilateral::getName() { return "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє"; }
 
 int Quadrilateral::getLengthA() { return a; }
 int Quadrilateral::getLengthB() { return b; }
@@ -24,11 +24,11 @@ int Quadrilateral::getAngleC() { return C; }
 int Quadrilateral::getAngleD() { return D; }
 
 std::string Quadrilateral::getAllLengths() {
-	return "Стороны: a=" + std::to_string(a) + " b=" + std::to_string(b) + " c=" + std::to_string(c) + " d=" + std::to_string(d);
+	return "РЎС‚РѕСЂРѕРЅС‹: a=" + std::to_string(a) + " b=" + std::to_string(b) + " c=" + std::to_string(c) + " d=" + std::to_string(d);
 }
 
 std::string Quadrilateral::getAllAngles() {
-	return "Угол: A=" + std::to_string(A) + " B=" + std::to_string(B) + " C=" + std::to_string(C) + " D=" + std::to_string(D);
+	return "РЈРіРѕР»: A=" + std::to_string(A) + " B=" + std::to_string(B) + " C=" + std::to_string(C) + " D=" + std::to_string(D);
 }
 
 bool Quadrilateral::getCorrect() {
@@ -43,10 +43,10 @@ bool Quadrilateral::getCorrect() {
 std::string Quadrilateral::getInfo() {
 	std::string correct;
 	if (getCorrect()) {
-		correct = "Правильная";
+		correct = "РџСЂР°РІРёР»СЊРЅР°СЏ";
 	}
 	else {
-		correct = "Неправильная";
+		correct = "РќРµРїСЂР°РІРёР»СЊРЅР°СЏ";
 	}
-	return getName() + ":\n" + correct + "\nКоличество сторон: " + std::to_string(getSides()) + "\n" + getAllLengths() + "\n" + getAllAngles();
+	return getName() + ":\n" + correct + "\nРљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " + std::to_string(getSides()) + "\n" + getAllLengths() + "\n" + getAllAngles();
 }

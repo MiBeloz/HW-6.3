@@ -1,9 +1,9 @@
-#include "EquilateralTriangle.h"
+п»ї#include "EquilateralTriangle.h"
 
 
 EquilateralTriangle::EquilateralTriangle(const int lengthABC) : IsoscelesTriangle(lengthABC, lengthABC, 60, 60) {}
 
-std::string EquilateralTriangle::getName() { return "Равносторонний треугольник"; }
+std::string EquilateralTriangle::getName() { return "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє"; }
 
 bool EquilateralTriangle::getCorrect() {
 	if (getLengthA() == getLengthB() && getLengthB() == getLengthC() && getAngleA() == 60 && getAngleB() == 60 && getAngleC() == 60 && Triangle::getCorrect()) {

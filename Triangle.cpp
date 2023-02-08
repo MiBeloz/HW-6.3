@@ -1,4 +1,4 @@
-#include "Triangle.h"
+п»ї#include "Triangle.h"
 
 
 Triangle::Triangle(const int lengthA, const int lengthB, const int lengthC, const int angleA, const int angleB, const int angleC) : Figure(3) {
@@ -10,7 +10,7 @@ Triangle::Triangle(const int lengthA, const int lengthB, const int lengthC, cons
 	C = angleC;
 }
 
-std::string Triangle::getName() { return "Треугольник"; }
+std::string Triangle::getName() { return "РўСЂРµСѓРіРѕР»СЊРЅРёРє"; }
 
 int Triangle::getLengthA() { return a; }
 int Triangle::getLengthB() { return b; }
@@ -20,11 +20,11 @@ int Triangle::getAngleB() { return B; }
 int Triangle::getAngleC() { return C; }
 
 std::string Triangle::getAllLengths() {
-	return "Стороны: a=" + std::to_string(a) + " b=" + std::to_string(b) + " c=" + std::to_string(c);
+	return "РЎС‚РѕСЂРѕРЅС‹: a=" + std::to_string(a) + " b=" + std::to_string(b) + " c=" + std::to_string(c);
 }
 
 std::string Triangle::getAllAngles() {
-	return "Угол: A=" + std::to_string(A) + " B=" + std::to_string(B) + " C=" + std::to_string(C);
+	return "РЈРіРѕР»: A=" + std::to_string(A) + " B=" + std::to_string(B) + " C=" + std::to_string(C);
 }
 
 bool Triangle::getCorrect() {
@@ -39,10 +39,10 @@ bool Triangle::getCorrect() {
 std::string Triangle::getInfo() {
 	std::string correct;
 	if (getCorrect()) {
-		correct = "Правильная";
+		correct = "РџСЂР°РІРёР»СЊРЅР°СЏ";
 	}
 	else {
-		correct = "Неправильная";
+		correct = "РќРµРїСЂР°РІРёР»СЊРЅР°СЏ";
 	}
-	return getName() + ":\n" + correct + "\nКоличество сторон: " + std::to_string(getSides()) + "\n" + getAllLengths() + "\n" + getAllAngles();
+	return getName() + ":\n" + correct + "\nРљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ: " + std::to_string(getSides()) + "\n" + getAllLengths() + "\n" + getAllAngles();
 }
